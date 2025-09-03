@@ -1,0 +1,22 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh 5vw;
+}
+
+.hero-text {
+  font-weight: bold;
+  margin: auto 0;
+  max-width: 622px;
+  margin-right: 2rem;
+}
+
+#subtitle {
+  font-weight: bold;
+  color: rgba(14, 14, 14, 0.5);
+  font-size: 1.5rem;
+}
+
+.hero-img {
+  margin-left: 2rem;
+}
