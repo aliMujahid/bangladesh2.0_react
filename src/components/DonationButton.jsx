@@ -10,6 +10,7 @@ export default function DonationButton({ amount, handleClick }) {
         fontSize: "h2.fontSize",
         fontWeight: "bold",
         padding: "3rem",
+        m: "1rem",
       }}
       onClick={() => handleClick(amount)}
     >
