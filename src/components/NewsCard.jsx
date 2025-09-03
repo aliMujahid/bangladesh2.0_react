@@ -127,7 +127,7 @@ export default function NewsCard() {
               key={article.id}
               sx={{
                 display: "flex",
-                flexDirection: "row",
+                flexDirection: { xs: "column", md: "row" },
                 bgcolor: "white",
                 my: "1.5rem",
                 p: "3rem",
@@ -136,7 +136,10 @@ export default function NewsCard() {
             >
               <Box
                 className="news-card-image"
-                sx={{ width: "40%", height: "100%" }}
+                sx={{
+                  width: { xs: "100%", sm: "40%" },
+                  height: "100%",
+                }}
               >
                 <Box
                   sx={{
@@ -156,13 +159,13 @@ export default function NewsCard() {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
-                  width: "50%",
+                  width: { xs: "100%", md: "50%" },
                   ml: "2rem",
                   pr: "1rem",
                 }}
               >
                 <Box className="news-card-heading">
-                  <Typography variant="h4">{article.title}</Typography>
+                  <Typography variant="h3">{article.title}</Typography>
                   <Typography sx={{ fontSize: "0.85rem", color: "GrayText" }}>
                     {article.source.name} {article.publishedAt}
                   </Typography>
@@ -175,7 +178,10 @@ export default function NewsCard() {
                 <Button
                   variant="contained"
                   href={article.url}
-                  sx={{ alignSelf: "flex-start" }}
+                  sx={{
+                    alignSelf: { sx: "center", md: "flex-start" },
+                    width: { sx: "100%", sm: "inherit" },
+                  }}
                 >
                   Read More
                 </Button>
