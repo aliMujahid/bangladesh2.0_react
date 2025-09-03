@@ -12,6 +12,7 @@ export default function Card({ title, btn, variant }) {
         bgcolor: variant ? `${variant}.light` : "White",
         margin: "1.5rem",
         padding: "1.5rem",
+        maxWidth: { xs: "100%", sm: "80%", md: "40%" },
       }}
     >
       <img

@@ -76,7 +76,13 @@ function App() {
 
         <div id="pillars" className="page-section">
           <SectionHeading section={sections[0]} />
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: { xs: "column", md: "row" },
+              flexWrap: { md: "wrap", lg: "nowrap" },
+            }}
+          >
             {pillars.map((pillar) => {
               return <Card key={pillar} title={pillar} />;
             })}

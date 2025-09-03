@@ -2,7 +2,7 @@
   margin-bottom: 80px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .page-section {
     text-align: center;
   }
