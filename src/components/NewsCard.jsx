@@ -134,12 +134,16 @@ export default function NewsCard() {
                 borderRadius: 8,
               }}
             >
-              <Box className="news-card-image" sx={{ width: "50%" }}>
+              <Box
+                className="news-card-image"
+                sx={{ width: "50%", height: "310px" }}
+              >
                 <Box
                   sx={{
                     width: "100%",
-                    height: "auto",
+                    height: "100%",
                     borderRadius: 8,
+                    objectFit: "contain",
                   }}
                   component="img"
                   src={article.image}
