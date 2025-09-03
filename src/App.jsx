@@ -80,6 +80,7 @@ function App() {
             sx={{
               display: "flex",
               flexDirection: { xs: "column", md: "row" },
+              justifyContent: { md: "space-around" },
               flexWrap: { md: "wrap", lg: "nowrap" },
             }}
           >
@@ -92,10 +93,13 @@ function App() {
         <div id="futureVision" className="page-section">
           <SectionHeading section={sections[1]} />
 
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
+          <Box
+            sx={{ display: "flex", flexDirection: { xs: "column", md: "row" } }}
+          >
             {visions.map((vision) => {
               return (
                 <Card
+                  style={{ textAlign: "center" }}
                   variant={vision.variant}
                   key={vision.title}
                   title={vision.title}

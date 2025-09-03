@@ -2,7 +2,7 @@ import { Button, Paper, Typography } from "@mui/material";
 
 import cardIcon from "../assets/images/card-icon.png";
 
-export default function Card({ title, btn, variant }) {
+export default function Card({ title, btn, variant, style = {} }) {
   return (
     <Paper
       elevation={0}
@@ -10,9 +10,10 @@ export default function Card({ title, btn, variant }) {
         border: "1px solid #0e0e0e26",
         borderRadius: 4,
         bgcolor: variant ? `${variant}.light` : "White",
-        margin: "1.5rem",
+        margin: { xs: "1.5rem auto", md: "1.5rem" },
         padding: "1.5rem",
-        maxWidth: { xs: "100%", sm: "80%", md: "40%" },
+        maxWidth: { xs: "80%", md: "40%" },
+        ...style,
       }}
     >
       <img
@@ -31,7 +32,12 @@ export default function Card({ title, btn, variant }) {
       </Typography>
       {btn && (
         <Button
-          sx={{ color: "white", bgcolor: `${variant}.main`, mt: "1.5rem" }}
+          sx={{
+            color: "white",
+            bgcolor: `${variant}.main`,
+            mt: "1.5rem",
+            width: { xs: "100%", md: "fit-content" },
+          }}
           variant="contained"
         >
           {btn.text}

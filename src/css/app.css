@@ -3,7 +3,11 @@
 }
 
 @media (max-width: 1200px) {
-  .page-section {
+  .page-section .section-heading {
+    text-align: center;
+  }
+
+  .cards {
     text-align: center;
   }
 }
