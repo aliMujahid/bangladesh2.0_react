@@ -12,7 +12,11 @@ export default function Hero() {
           Idea , innovation , vision and challenges in New Bangladesh.
         </Typography>
 
-        <Button href="#" variant="contained" sx={{ mt: "1.5rem" }}>
+        <Button
+          href="#"
+          variant="contained"
+          sx={{ mt: "1.5rem", width: { sm: "100%", xs: "100%", md: "auto" } }}
+        >
           Explore New Bangladesh
         </Button>
       </div>

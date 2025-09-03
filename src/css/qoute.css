@@ -22,3 +22,9 @@
   color: rgba(14, 14, 14, 0.6);
   margin-top: 0;
 }
+
+@media (max-width: 1024px) {
+  #qoute {
+    text-align: left;
+  }
+}
