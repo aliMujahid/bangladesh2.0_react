@@ -22,7 +22,7 @@ export default function PollTable({ questions }) {
       className="questions-table"
     >
       <Table sx={{ width: "94%", border: "1px solid #0e0e0e26", m: "auto" }}>
-        <TableHead>
+        <TableHead sx={{ bgcolor: "success.light" }}>
           <TableRow>
             <TableCell>Questions</TableCell>
             <TableCell>Select Your Opinion</TableCell>

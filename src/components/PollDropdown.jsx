@@ -10,11 +10,11 @@ export default function PollDropdown() {
 
   return (
     <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
-        <InputLabel id="age-select-label">Opinion</InputLabel>
+      <FormControl fullWidth sx={{ bgcolor: "success.light" }}>
+        <InputLabel id="opinion-select-label">Opinion</InputLabel>
         <Select
-          labelId="age-select-label"
-          id="age-select"
+          labelId="opinion-select-label"
+          id="opinion-select"
           value={opinion}
           label="Opinion"
           onChange={handleChange}

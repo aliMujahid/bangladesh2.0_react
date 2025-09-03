@@ -136,7 +136,7 @@ export default function NewsCard() {
             >
               <Box
                 className="news-card-image"
-                sx={{ width: "50%", height: "310px" }}
+                sx={{ width: "40%", height: "100%" }}
               >
                 <Box
                   sx={{
