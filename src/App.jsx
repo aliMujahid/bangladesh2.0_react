@@ -11,6 +11,7 @@ import DonationForm from "./components/DonationForm";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Qoute from "./components/Qoute";
+import SubcriptionForm from "./components/SubscriptionForm";
 
 function App() {
   const theme = useTheme();
@@ -143,32 +144,7 @@ function App() {
         >
           <SectionHeading section={sections[5]} />
 
-          <form className="subscription-form">
-            <TextField
-              sx={{
-                bgcolor: "white",
-                "& .MuiOutlinedInput-notchedOutline": {
-                  border: "none",
-                },
-                borderTopLeftRadius: 16,
-                borderBottomLeftRadius: 16,
-                pl: "1rem",
-                minWidth: "60%",
-              }}
-              placeholder="Enter your email here"
-            />
-            <Button
-              sx={{
-                borderRadius: "unset",
-                borderTopRightRadius: 16,
-                borderBottomRightRadius: 16,
-                py: "12px",
-              }}
-              variant="contained"
-            >
-              Subscribe
-            </Button>
-          </form>
+          <SubcriptionForm />
           <p>We promise not to spam you!</p>
         </div>
       </Container>
