@@ -9,7 +9,7 @@ export default function NewsCard() {
     return text;
   };
 
-  const api = `https://gnews.io/api/v4/search?q=Bangladesh&in=description&lang=en&max=4&apikey=${
+  const api = `https://gnews.io/api/v4/search?q="Bangladesh interim government" OR "Muhammad Yunus"&in=description&lang=en&max=4&apikey=${
     import.meta.env.VITE_API_KEY
   }`;
 
