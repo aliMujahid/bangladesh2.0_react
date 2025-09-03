@@ -1,5 +1,6 @@
 import { Button, Typography } from "@mui/material";
 
+import heroImage from "../assets/images/hero.png";
 import "../css/hero.css";
 
 export default function Hero() {
@@ -17,7 +18,7 @@ export default function Hero() {
       </div>
       <div className="hero-img">
         <img
-          src="/hero.png"
+          src={heroImage}
           alt="An image of the National Martyrs' Memorial with the flag of Bangladesh in front."
         />
       </div>

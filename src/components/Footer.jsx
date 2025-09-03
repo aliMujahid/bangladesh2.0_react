@@ -1,13 +1,17 @@
 import { Box, Link, Typography } from "@mui/material";
 
+import FB from "../assets/images/facebook.png";
+import Insta from "../assets/images/instagram.png";
+import X from "../assets/images/x.png";
+
 export default function Footer() {
   function createData(href, src, alt) {
     return { href, src, alt };
   }
   const links = [
-    createData("#", "/facebook.png", "Facebook-logo"),
-    createData("#", "/instagram.png", "Insta-logo"),
-    createData("#", "/x.png", "X-logo"),
+    createData("#", FB, "Facebook-logo"),
+    createData("#", Insta, "Insta-logo"),
+    createData("#", X, "X-logo"),
   ];
   return (
     <>

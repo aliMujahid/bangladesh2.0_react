@@ -1,5 +1,7 @@
 import { Button, Paper, Typography } from "@mui/material";
 
+import cardIcon from "../assets/images/card-icon.png";
+
 export default function Card({ title, btn, variant }) {
   return (
     <Paper
@@ -16,7 +18,7 @@ export default function Card({ title, btn, variant }) {
         style={{
           marginBottom: "1.5rem",
         }}
-        src="/card-icon.png"
+        src={cardIcon}
         alt="lightbulb"
       />
       <Typography variant="h4" gutterBottom>
