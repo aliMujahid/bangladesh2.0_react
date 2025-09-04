@@ -9,9 +9,20 @@ import { Link as RouterLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <Box sx={{ flexGrow: 1, py: "2.5rem", maxWidth: "xl", mx: "auto" }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        py: "2.5rem",
+        maxWidth: "xl",
+        mx: "auto",
+      }}
+    >
       <AppBar position="static" color="" elevation="0">
-        <Toolbar>
+        <Toolbar
+          sx={{
+            bgcolor: "#f5f5f5",
+          }}
+        >
           <Link
             variant="h3"
             component={RouterLink}
