@@ -5,6 +5,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 
+import { Link as RouterLink } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1, py: "2.5rem", maxWidth: "xl", mx: "auto" }}>
@@ -12,7 +14,8 @@ export default function Navbar() {
         <Toolbar>
           <Link
             variant="h3"
-            href="#"
+            component={RouterLink}
+            to="/"
             sx={{ flexGrow: 1, color: "black" }}
             underline="none"
           >
@@ -20,6 +23,8 @@ export default function Navbar() {
           </Link>
           <Button
             variant="outlined"
+            component={RouterLink}
+            to="/signin"
             sx={{ color: "primary.main", border: "2px solid", py: "0.7rem" }}
           >
             Sign In
